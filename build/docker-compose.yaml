@@ -4,7 +4,7 @@ services:
   test_demo.api:
     container_name: demo.api
     build:
-      context: .
+      context: ..
       dockerfile: src/NginxDemo.Api/Dockerfile
     ports:
       - '8011:80'
