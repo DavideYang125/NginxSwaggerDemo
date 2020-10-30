@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  test_demo.api:
+    container_name: demo.api
+    build:
+      context: ../src
+      dockerfile: NginxDemo.Api/Dockerfile
+    ports:
+      - '8011:80'
+    dns:
+      - 8.8.8.8
+      - 114.114.114.114
