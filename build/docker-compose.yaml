@@ -11,3 +11,16 @@ services:
     dns:
       - 8.8.8.8
       - 114.114.114.114
+
+  test.demo.nginx:
+    build:
+      context: Nginx
+      dockerfile: Dockerfile
+    volumes:
+      - /root/guobah5/:/root/guobah5/ 
+    ports:
+      - "80:80"
+      - "443:443"
+    dns:
+      - 8.8.8.8
+      - 114.114.114.114
