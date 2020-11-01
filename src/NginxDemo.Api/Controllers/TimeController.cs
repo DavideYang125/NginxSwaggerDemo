@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace NginxDemo.Api.Controllers
 {
     [Route("api/[controller]/[action]")]
+    //[ApiExplorerSettings(GroupName = "servicesa")]
     [ApiController]
     public class TimeController : ControllerBase
     {
